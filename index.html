@@ -23,35 +23,41 @@
 			.container {
   				position: relative;
   				width: 50%;
+  				padding: 16px 50px;
 				}
 			.image {
   				opacity: 1;
   				display: block;
-  				width: 120px;
-  				height: auto;
+  				width: 360px;
+  				height: 240px;
   				transition: .5s ease;
   				backface-visibility: hidden;
+  				margin-left: 5em;
 				}
 			.container:hover .image {
   				opacity: 0.3;
 				}
 			.container:hover .middle {
   				opacity: 1;
+  				width:  360px;
+  				height: 240px;
+  				float: center;
 				}
 			.middle {
   				transition: .5s ease;
   				opacity: 0;
-  				position: absolute;
-  				top: 50%;
-  				left: 50%;
+  				position: relative;
+  				height: 20px;
+  				width: 20px;
   				transform: translate(-50%, -50%);
   				-ms-transform: translate(-50%, -50%)
 				}
 			.text {
- 			 	background-color: #4CAF50;
+ 			 	background-color: royalblue;
   				color: white;	
   				font-size: 16px;
-  				padding: 16px 32px
+  				padding: 16px 32px;
+  				float: right;
 				}
 			.Pointli{
 				color: lightsteelblue;
@@ -71,6 +77,12 @@
 					width: 290px;
 					border: 2px black;
 				}
+			.centered {
+  					position: absolute;
+  					top: 50%;
+  					left: 50%;
+  					transform: translate(-50%, -50%);
+				}
 			body{
 				background-image: repo("NoMansPortal.png");
 				background-repeat: no-repeat;
@@ -82,14 +94,14 @@
 <body background="NoMansPortal.png">
 	<h1>Welcome to Hunter's Webpage</h1>
 		<a style="text-indent: 120px;" href="LinkPage.html"><h2>My Portal</h2></a>
-		<div class="container">
-			<img repo="academy2.jpg"alt="space station"class="image"position="right">
-				<div class="middle">
-					<a href="http://www.github.com">
-						<div class="text">Wander</div>
+		<div style="float: right;"class="container">
+			<img src="academy2.jpg" alt="space station"class="image">
+			<div class="middle">
+				<a href="github.com">
+					<div class="text">Wander</div>
 					</a>
-				</div>
 			</div>
+		</div>
 		<p style="width: 480px;">This website will have the following benefits for my career:</p>
 
 			<ul>
