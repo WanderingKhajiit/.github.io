@@ -20,13 +20,53 @@
 			a{
 				color: lightgray;
 				}
+			.container {
+  				position: relative;
+  				width: 50%;
+				}
+			.image {
+  				opacity: 1;
+  				display: block;
+  				width: 120px;
+  				height: auto;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+				}
+			.container:hover .image {
+  				opacity: 0.3;
+				}
+			.container:hover .middle {
+  				opacity: 1;
+				}
+			.middle {
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				-ms-transform: translate(-50%, -50%)
+				}
+			.text {
+ 			 	background-color: #4CAF50;
+  				color: white;	
+  				font-size: 16px;
+  				padding: 16px 32px
+				}
 			.Pointli{
+				color: lightsteelblue;
+				font-size: 24px;
+				height: 100px;
+				width: 200px;
+				}
+			.Pointtr{
 				color: lightgray;
 				font-size: 24px;
 				height: 40px;
+				width: 100px;
 				}
 			.desTable{
-					table-layout: auto;
+					table-layout: fixed;
 					height: 180px;
 					width: 290px;
 					border: 2px black;
@@ -35,14 +75,22 @@
 				background-image: repo("NoMansPortal.png");
 				background-repeat: no-repeat;
 				background-attachment: fixed;
-				background-size: cover;
+				background-size: 100% 100%;
 				}
 		</style>
 </head>
 <body background="NoMansPortal.png">
 	<h1>Welcome to Hunter's Webpage</h1>
 		<a style="text-indent: 120px;" href="LinkPage.html"><h2>My Portal</h2></a>
+		<div class="container">
+			<img src="academy2.jpg"alt="space station"class="image"position="top right">
+				<div class="middle">
+					<a href="github.com">
+						<div class="text">Wander</div>
+				</div>
+			</div>
 		<p style="width: 480px;">This website will have the following benefits for my career:</p>
+
 			<ul>
 				<li class="Pointli">Better Presentation</li>
 				<li class="Pointli">Show of independence</li>
@@ -50,11 +98,11 @@
 			<ul>
 	<h2>My Skillset</h2>
 			<table class="desTable">
-				<tr class="Pointli">
+				<tr class="Pointtr">
 					<td>Web Design</td>
 					<td>Software Engineering</td>
 				</tr>
-				<tr class="Pointli">
+				<tr class="Pointtr">
 					<td>Front End Work</td>
 					<td>Back End Work</td>
 				</tr>
