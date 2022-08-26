@@ -10,23 +10,66 @@
 				text-decoration: overline;
 				text-align: center;
 				}
-			h2{
-				color: mistyrose;
-				}
 			p{
 				color: lightgray;
 				font-size: 2em;
 				}
 			a{
-				color: lightgray;
+				color: whitesmoke;
 			}
+			.container {
+  				position: relative;
+  				width: 50%;
+				}
+			.img {
+  				opacity: 1;
+  				display: block;
+  				width: 300px;
+  				height: 200px;
+  				transition: .5s ease;
+  				backface-visibility: hidden;
+  				margin-left: 5em;
+				}
+			.container:hover .img {
+  				opacity: 0.3;
+				}
+			.container:hover .middle {
+  				opacity: 1;
+				}
+			.middle {
+  				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				height: 20px;
+  				width: 20px;
+  				margin-left: 2em;
+  				transform: translate(-50%, -50%);
+  				-ms-transform: translate(-50%, -50%)
+				}
+			.text {
+ 			 	
+  				color: white;
+  				position: fixed;	
+  				font-size: 25px;
+  				padding: 16px 32px;
+  				float: right;
+  				margin-left:  6em;
+  				margin-top:  -5em;
+				}
 			.Pointli{
+				color: lightsteelblue;
+				font-size: 24px;
+				height: 100px;
+				width: 200px;
+				}
+			.Pointtr{
 				color: lightgray;
 				font-size: 24px;
 				height: 40px;
+				width: 100px;
 				}
-			.desTable{
-					table-layout: auto;
+			.desTr{
+					table-layout: fixed;
 					height: 180px;
 					width: 290px;
 					border: 2px black;
@@ -34,28 +77,44 @@
 			body{
 				background-image: repo("NoMansPortal.png");
 				background-repeat: no-repeat;
-				background-attachment: fixed;
+				background-attachment: auto;
 				background-size: 100% 100%;
 			}
 		</style>
 </head>
+
 <body background= "NoMansPortal.png">
 	<h1>My Career Portal</h1>
-	<a style="text-indent: 120px;"href="WanderingKhajiit.github.io/main/index.html"><h2>Home</h2></a>
+	
+	<a style="text-indent: 120px;"href="WanderingKhajiit.github.io/main/index.html">Home</a>
+		
 		<p><table>
-				<tr class="desTable">
-					<td><a href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage&_ga=2.148347127.1594916164.1661430024-539586212.1632932531"><h2>Indeed Profile</h2></a></td>
-					<td><img src="indeed-logo.jpg" alt="This is a test image" height="120" width="120"></td>
+				<tr class="desTr">
+					<td><div class="container">
+							<img src="indeed-logo.jpg" class="img"  alt="indeed">
+							<div class="middle">
+								<a href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage&_ga=2.148347127.1594916164.1661430024-539586212.1632932531"><div class="text">Indeed Profile</a></div></div></div>
+					</td>
+						
+					
 				</tr>
-				<tr class="desTable">
-					<td><a href="https://www.linkedin.com/in/hperkins96/"><h2>My LinkedIn Page</h2></a></td>
-					<td><img src="LinkedIn-Logo.jpg" alt="This is a test image" height="120" width="120"></td>
+
+				<tr class="desTr">
+					<td><div class="container">
+							<img src="LinkedIn-Logo.jpg"class="img" alt="LinkedIn">
+							<div class="middle">
+								<a href="https://www.linkedin.com/in/hperkins96/"><div class="text">My LinkedIn Page</a></div></div></div></td>
+					
 				</tr>
-				<tr class="desTable">
-					<td><a href="https://careerkarma.com/profile/cl6v29uos2280655blscn8eo9l5/"><h2>My CareerKarma page</h2></a></td>
-					<td><img src="CareerKarma.jpg" alt="Signifier" Height="120" width="120"></td>
+
+				<tr class="desTr">
+					<td><div class="container">
+							<img src="CareerKarma.jpg" class="img"alt="CareerKarma">
+							<div class="middle">
+								<a href="https://careerkarma.com/profile/cl6v29uos2280655blscn8eo9l5/"><div class="text">My CareerKarma page</a></div></div></div></td>
+					
 				</tr>
+
 			</table>
 		</p>
-	</body>
 </html>
