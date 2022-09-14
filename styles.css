@@ -1,0 +1,179 @@
+:root {
+	--r: 125;
+	--g: 1;
+	--b: 2;
+	--floating-BG: rgb(var(--r), var(--g), var(--b));
+}
+h1{
+	color: rosybrown;
+	padding: 10px;
+	font-family: "Georgia", serif;"
+	font-size: 5em;
+	text-decoration: overline;
+	text-align: center;
+		}
+h2{
+	color: mistyrose;
+		}
+p{
+	color: lightgray;
+	font-size: 2em;
+		}
+#portal{
+		color: white;
+		position: absolute;	
+  		font-size: 25px;
+  		padding: 10px 10px;
+  		float: right;
+  		margin-left:  1em;
+  		margin-top:  -2em;
+  		text-decoration: underline;
+			}
+#portal2{
+	color: white;
+  	position: relative;	
+  	font-size: 25px;
+  	padding: 16px 32px;
+  	margin-left:  6em;
+  	margin-top:  -2em;
+  	text-decoration: underline;
+			}
+#a1{
+	color: rosybrown;
+	text-indent: 120px;
+		}
+#p1{
+	color: whitesmoke;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 2em;
+		}
+#ul1{
+	color: whitesmoke;
+		}
+#imageportal {
+  	opacity: 1;
+  	display: block;
+  	width: clamp(100px, 70%, 500px);
+  	height: clamp(80px, 60%, 200px);
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+  	margin-left: 5em;
+  	aspect-ratio: 16/9;
+
+		}
+.container {
+  	position: relative;
+		}
+.container2 {
+  	position: relative;
+  	width: 50%;
+  	padding: 16px 50px;
+		}
+.img {
+  	opacity: 1;
+  	display: block;
+  	width: clamp(100px, 70%, 500px);
+  	height: 200px;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+  	margin-left: 5em;
+
+		}
+.container:hover .img {
+  	opacity: 0.3;
+		}
+.container:hover .middle {
+  	opacity: 1;
+  	
+ 
+
+		}
+.container:hover #imageportal {
+  	opacity: 0.3;
+				}
+.container:hover .middle2 {
+  	opacity: 1;
+  	width:  360px;
+  	height: 240px;
+				}
+.middle {
+  	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	height: clamp(30px, 50%, 85px);
+  	width: clamp(50px, 50%, 85px);
+  	
+			}
+.middle2 {
+  	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	height: 20px;
+  	width: 20px;
+  	margin-left: 2em;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%)
+		}
+.text{
+ 	height: clamp(25px, 60%, 50px);
+  	width: clamp(25px, 60%, 50px);		 	
+  	color: whitesmoke;
+  	background-color: var(--floating-BG);
+  	position: relative;	
+  	font-size: 15px;
+  	font-family: cursive;
+  	padding: 16px 32px;
+  	margin-left:  100%;  
+  	margin-top: -225%;
+  	text-align: center;
+  	text-overflow: ;
+  	
+				}
+.text2 {
+	height: clamp(10px, 30%, 50px);
+  	width: clamp(15px, 50%, 50px);		 	
+  	color: whitesmoke;
+  	background-color: var(--floating-BG);
+  	position: inherit;	
+  	font-size: 15px;
+  	font-family: times new roman, sans-serif;
+  	padding: 16px 32px;
+  	top: 50%;
+  	left: 30%;
+  	margin-left:  6em;  
+  	margin-top:  -10em;
+
+ 
+				}
+.Pointli{
+	color: lightsteelblue;
+	font-size: 24px;
+	height: 100px;
+	width: 200px;
+				}
+.Pointtr{
+	color: lightgray;
+	font-size: 24px;
+	height: 40px;
+	width: 100px;
+				}
+.desTr{
+	table-layout: fixed;
+	height: 180px;
+	width: 290px;
+	border: 2px black;
+	
+				}
+.centered {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  				}
+body{
+	background-image: repo("NoMansPortal.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	}
