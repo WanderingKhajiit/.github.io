@@ -178,7 +178,7 @@ a:hover{
   width: 50%;
 }
 body{
-	background-image: repo("NoMansPortal.png");
+	background-image: url("NoMansPortal.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
