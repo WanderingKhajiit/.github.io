@@ -171,6 +171,12 @@ a:hover{
   	left: 50%;
   	transform: translate(-50%, -50%);
   				}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 body{
 	background-image: repo("NoMansPortal.png");
 	background-repeat: no-repeat;
