@@ -85,10 +85,10 @@ p{
 		}
 .container:hover .middle {
   	opacity: 1;
-  	
- 
-
-		}
+  	}
+a:hover{
+	color: green;
+}
 .container:hover #imageportal {
   	opacity: 0.3;
 				}
