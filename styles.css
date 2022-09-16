@@ -92,8 +92,14 @@ h4{
 .container:hover .middle {
   	opacity: 1;
   	}
+a:link{
+	color: purple;
+}
 a:hover{
 	color: green;
+}
+a:visited{
+	color: red;
 }
 .container:hover #imageportal {
   	opacity: 0.3;
